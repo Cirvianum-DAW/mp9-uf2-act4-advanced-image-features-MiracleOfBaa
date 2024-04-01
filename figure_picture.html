@@ -1,23 +1,119 @@
-**Exercise 7: Figure Elements**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure Elements</title>
+    <style>
+      /* Add CSS for styling as needed */
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          padding-bottom: 80px; /* Ajuste para dar espacio al footer */
+      }
 
-_Instructions:_
+      header {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 20px;
+      }
 
-1. Create a new HTML file named `figure_picture.html`.
-2. Start by using the `<figure>` element to encapsulate an image with a caption.
-3. Insert an image within the `<figure>` element.
-4. Add a `<figcaption>` element inside the `<figure>` to provide a caption for the image.
-5. Experiment with different styling options for the image and caption using CSS.
-6. What is the purpose of the `<figure>` and `<figcaption>` elements? Write a brief explanation in the HTML file.
+      nav {
+          background-color: #333;
+          overflow: hidden;
+          width: 100%;
+          text-align: center; /* Center the navigation links */
+      }
 
----
+      nav a {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 20px;
+          text-decoration: none;
+      }
 
-**Exercise 8: Art Direction - Picture elements**
+      nav a:hover {
+          background-color: #ddd;
+          color: black;
+      }
 
-_Instructions:_
+      .active {
+          background-color: #555;
+      }
 
-1. Expand the `figure_picture.html` file.
-2. Use the `<picture>` element to provide different image sources based on media conditions.
-3. Include multiple `<source>` elements within the `<picture>` element, each with different image sources and media conditions.
-4. Test the page in a browser and observe how different images are displayed based on the media conditions.
+      img {
+          display: block;
+          margin: 20px auto;
+      }
 
----
+      p, figure {
+          text-align: center; /* Center the text in p and figure elements */
+          margin: 20px;
+      }
+
+      figure {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      figcaption {
+          font-style: italic;
+      }
+
+      h2 {
+          text-align: center; /* Center the text in h2 elements */
+      }
+
+      footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Figure Elements</h1>
+  </header>
+  <nav>
+    <a href="basic_image.html">Exercise 1 i 2</a>
+    <a href="resolution_switching.html">Exercise 3</a>
+    <a href="image_alignment.html">Exercise 4 i 5</a>
+    <a href="image_gallery.html">Exercise 6</a>
+    <a href="figure_picture.html" class="active">Exercise 7 i 8</a>
+  </nav>
+    <figure>
+      <h2>Exercise 7: Figure Elements</h2>
+        <img src="./img/2.webp" alt="A beautiful image">
+        <figcaption>This is a caption for the image.</figcaption>
+    </figure>
+    <p>The <code>&lt;figure&gt;</code> element is used to encapsulate self-contained content, such as images, diagrams, illustrations, etc., along with their captions represented by the <code>&lt;figcaption&gt;</code> element.<br>This helps in semantically associating the image with its caption.</p>
+
+    <h2>Exercise 8: Art Direction - Picture elements</h2>
+
+    <picture>
+      <source media="(max-width: 600px)" srcset="./img/3.jpg">
+      <source media="(min-width: 601px)" srcset="./img/3.jpg">
+      <img src="./img/3.jpg" alt="A high-resolution image with different sources based on media conditions">
+    </picture>
+    <footer>
+      Follow me on social media:
+      <a href="https://www.facebook.com/yourfacebook" target="_blank"
+        >Facebook</a
+      >
+      <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+      <a href="https://www.instagram.com/yourinstagram" target="_blank"
+        >Instagram</a
+      >
+    </footer>
+</body>
+</html>

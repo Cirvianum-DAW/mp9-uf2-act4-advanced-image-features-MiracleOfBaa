@@ -1,26 +1,123 @@
-**Exercise 1: Basic Image Insertion**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Image Insertion</title>
+    <style>
+        /* CSS para estilos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            padding-bottom: 80px; /* Ajuste para dar espacio al footer */
+        }
 
-_Instructions:_
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-1. Create an HTML file named `basic_image.html`.
-2. Find an image online (ensure it's freely usable and respects copyrights).
-3. Insert the image into the HTML file using the `<img>` element.
-4. Set the `src` attribute to the image file's URL.
-5. Provide a brief description of the image using the `alt` attribute.
-6. Test the page in a web browser to ensure the image displays correctly.
-7. Why is the `alt` attribute important for images? Write a brief explanation in the HTML file.
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+        }
 
----
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
 
-**Exercise 2: Image Formats and Attributes**
+        nav a:hover {
+            background-color: #555;
+        }
 
-_Instructions:_
+        .active {
+            background-color: #555;
+        }
 
-1. Expand the `basic_image.html` file.
-2. Choose two images in modern formats (e.g., WEBP, AVIF...).
-3. Include examples of each format using the `<img>` element with appropriate attributes.
-4. Experiment with setting `width` and `height` attributes to control image size.
-5. Test the page to observe how different attributes affect image display.
-6. What is the difference between the real size of the image and this attributes. Write a brief explanation in the HTML file.
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
 
----
+        p {
+            text-align: justify;
+            margin: 20px auto;
+            line-height: 1.5;
+            width: 70%; /* Ajusta el ancho del párrafo */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            text-align: center; /* Centra el texto del título */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0; /* El footer se fija en la parte inferior */
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Basic Image Insertion</h1>
+  </header>
+  <nav>
+    <a href="basic_image.html" class="active">Exercise 1 i 2</a>
+    <a href="resolution_switching.html">Exercise 3</a>
+    <a href="image_alignment.html">Exercise 4 i 5</a>
+    <a href="image_gallery.html">Exercise 6</a>
+    <a href="figure_picture.html">Exercise 7 i 8</a>
+  </nav>
+    <h2>Exercise 1: Basic Image Insertion</h2>
+    <img src="./img/ImageMountains.jpg" alt="A beautiful landscape with mountains and a lake.">
+    <p>
+      The alt attribute is important for images because it provides alternative text that is displayed when the image cannot be rendered.<br> This is crucial for accessibility, allowing users who rely on screen readers or have images disabled to understand the content conveyed by the image.<br>
+    </p>
+
+    <h2>Exercise 2: Image Formats and Attributes</h2>
+    <img src="./img/1.webp" alt="First image in WEBP format" width="300" height="200">
+    <img src="./img/image2.avif" alt="Second image in AVIF format" width="400" height="250">
+    <p>
+      The difference between the real size of the image and the attributes like width and height is that the attributes specify the display size of the image on the webpage, affecting its appearance but not its actual dimensions.<br> Adjusting these attributes can help optimize the layout and performance of the webpage.<br>
+    </p>
+
+    <footer>
+      Follow me on social media:
+      <a href="https://www.facebook.com/yourfacebook" target="_blank"
+        >Facebook</a
+      >
+      <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+      <a href="https://www.instagram.com/yourinstagram" target="_blank"
+        >Instagram</a
+      >
+    </footer>
+</body>
+</html>
