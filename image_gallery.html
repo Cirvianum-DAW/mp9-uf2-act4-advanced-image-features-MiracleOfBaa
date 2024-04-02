@@ -8,15 +8,30 @@
     <link rel="stylesheet" href="lightbox2.css">
     <script src="lightbox2.js"></script>
     <style>
-      /* Add CSS for styling as needed */
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          padding-bottom: 80px; /* Ajuste para dar espacio al footer */
+      }
+
+      header {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 20px;
+      }
+
       nav {
           background-color: #333;
           overflow: hidden;
+          width: 100%;
+          text-align: center; /* Center the navigation links */
       }
 
       nav a {
-          float: left;
-          display: block;
+          display: inline-block;
           color: white;
           text-align: center;
           padding: 14px 20px;
@@ -31,24 +46,68 @@
       .active {
           background-color: #555;
       }
+
+      img {
+          display: block;
+          margin: 20px auto;
+      }
+
+      p, figure {
+          text-align: center; /* Center the text in p and figure elements */
+          margin: 20px;
+      }
+
+      figure {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      figcaption {
+          font-style: italic;
+      }
+
+      h2 {
+          text-align: center; /* Center the text in h2 elements */
+      }
+
+      footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+      }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="#exercise1" class="active">Exercise 1</a>
-    <a href="#exercise2">Exercise 2</a>
-    <a href="#exercise3">Exercise 3</a>
-    <a href="#exercise4">Exercise 4</a>
-    <a href="#exercise5">Exercise 5</a>
-    <a href="#exercise6">Exercise 6</a>
-    <a href="#exercise7">Exercise 7</a>
-    <a href="#exercise8">Exercise 8</a>
-  </nav>
+    <header>
+        <h1>Image Gallery with Lightbox</h1>
+      </header>
+      <nav>
+        <a href="basic_image.html">Exercise 1 i 2</a>
+        <a href="resolution_switching.html">Exercise 3</a>
+        <a href="image_alignment.html">Exercise 4</a>
+        <a href="Responsive_Images.html">Exercise 5</a>
+        <a href="image_gallery.html" class="active">Exercise 6</a>
+        <a href="figure_picture.html">Exercise 7 i 8</a>
+      </nav>
     <div class="image-grid">
         <a href="./img/6.webp" data-lightbox="gallery"><img src="thumbnail1.jpg" alt="Image 1"></a>
         <a href="./img/7.webp" data-lightbox="gallery"><img src="thumbnail2.jpg" alt="Image 2"></a>
         <a href="./img/8.jpg" data-lightbox="gallery"><img src="thumbnail3.jpg" alt="Image 3"></a>
         <!-- Add more images as needed -->
     </div>
+    <footer>
+        <a href="https://www.facebook.com/yourfacebook" target="_blank"
+          >Facebook</a
+        >
+        <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/yourinstagram" target="_blank"
+          >Instagram</a
+        >
+      </footer>
 </body>
 </html>

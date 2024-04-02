@@ -1,0 +1,12 @@
+<img src="[map] (importada)" width="1024" height="681" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Daw31 -->
+<area shape="rect" coords="97,57,298,161" alt="Yahoo" href="https://www.yahoo.com" />
+<area shape="circle" coords="132,553,71" alt="Apple" href="https://www.apple.com" />
+<area shape="circle" coords="563,391,77" alt="Google" href="https://www.google.com" />
+</map>
