@@ -1,106 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figure Elements</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
       /* Add CSS for styling as needed */
       body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: #f4f4f4;
-          padding-bottom: 80px; /* Ajuste para dar espacio al footer */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        padding-bottom: 80px; /* Ajuste para dar espacio al footer */
       }
 
       header {
-          background-color: #333;
-          color: white;
-          text-align: center;
-          padding: 20px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
       }
 
       nav {
-          background-color: #333;
-          overflow: hidden;
-          width: 100%;
-          text-align: center; /* Center the navigation links */
+        background-color: #333;
+        overflow: hidden;
+        width: 100%;
+        text-align: center; /* Center the navigation links */
       }
 
       nav a {
-          display: inline-block;
-          color: white;
-          text-align: center;
-          padding: 14px 20px;
-          text-decoration: none;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
       }
 
       nav a:hover {
-          background-color: #ddd;
-          color: black;
+        background-color: #ddd;
+        color: black;
       }
 
       .active {
-          background-color: #555;
+        background-color: #555;
       }
 
       img {
-          display: block;
-          margin: 20px auto;
+        display: block;
+        margin: 20px auto;
       }
 
-      p, figure {
-          text-align: center; /* Center the text in p and figure elements */
-          margin: 20px;
+      p,
+      figure {
+        text-align: center; /* Center the text in p and figure elements */
+        margin: 20px;
       }
 
       figure {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       figcaption {
-          font-style: italic;
+        font-style: italic;
       }
 
       h2 {
-          text-align: center; /* Center the text in h2 elements */
+        text-align: center; /* Center the text in h2 elements */
       }
 
       footer {
-          background-color: #333;
-          color: white;
-          text-align: center;
-          padding: 20px;
-          position: fixed;
-          bottom: 0;
-          width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
       }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Palmeras</h1>
-  </header>
-  <nav>
-    <a href="basic_image.html">Exercise 1 i 2</a>
-    <a href="resolution_switching.html">Exercise 3</a>
-    <a href="image_alignment.html">Exercise 4</a>
-    <a href="Responsive_Images.html">Exercise 5</a>
-    <a href="image_gallery.html">Exercise 6</a>
-    <a href="figure_picture.html" >Exercise 7 i 8</a>
-    <a href="palmeras.html" class="active">Palmeras</a>
-  </nav>
 
+      .descripcion_ejercicio {
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      ol {
+        text-align: left;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Palmeras</h1>
+    </header>
+    <nav>
+      <a href="basic_image.html">Exercise 1 i 2</a>
+      <a href="resolution_switching.html">Exercise 3</a>
+      <a href="image_alignment.html">Exercise 4</a>
+      <a href="Responsive_Images.html">Exercise 5</a>
+      <a href="image_gallery.html">Exercise 6</a>
+      <a href="figure_picture.html">Exercise 7 i 8</a>
+      <a href="palmeras.html" class="active">Palmeras</a>
+      <a href="final.html">Final</a>
+    </nav>
     <h2>Exercise Palmeras</h2>
 
     <h2>Palm Tree:</h2>
-    
-       
-    <h2>Logo:</h2>
+    <img
+      src="./img/palmerasfinal.png"
+      alt="Palm Tree"
+      width="700px"
+      height="500px"
+      style="padding: 0px; margin: 0 auto"
+    />
+    <div class="descripcion_ejercicio">
+      <h1>Conversiones SVG</h1>
 
+      <h2>Ejercicio 1: Palmeres.eps Image</h2>
+      <ol>
+        <li>Abrí el archivo Palmeres.eps en Inkscape.</li>
+        <li>Convertí el archivo a SVG.</li>
+        <li>Seleccioné una de las palmeras y la recorté.</li>
+        <li>Cambié los colores de las hojas de la palmera.</li>
+        <li>Guardé las imágenes resultantes en mi computadora.</li>
+      </ol>
+    </div>
+
+    <h2>Logo:</h2>
+      <img
+        src="./img/logofinal.png"
+        alt="Logo"
+        width="500px"
+        height="500px"
+        style="padding: 0; margin: 0 auto; width: 20rem; height: 20rem"
+      />
+
+    <div class="descripcion_ejercicio">
+      <h2>Ejercicio 2: Logo de Instagram</h2>
+      <ol>
+        <li>Si el logo no estaba en formato SVG, lo convertí.</li>
+        <li>Aislé el logo de Instagram.</li>
+        <li>Cambié los colores del logo.</li>
+        <li>Guardé las imágenes resultantes.</li>
+      </ol>
+    </div>
 
     <footer>
       <a href="https://www.facebook.com/yourfacebook" target="_blank"
@@ -111,5 +178,5 @@
         >Instagram</a
       >
     </footer>
-</body>
+  </body>
 </html>

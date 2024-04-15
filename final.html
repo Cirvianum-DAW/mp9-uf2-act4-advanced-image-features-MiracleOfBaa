@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figure Elements</title>
+    <style>
+      /* Add CSS for styling as needed */
+      body {
+        background-image: url("./img/Fons.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #555;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+
+      nav a:hover {
+        background-color: #777;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Final</h1>
+      <nav>
+        <a href="basic_image.html">Exercise 1 i 2</a>
+        <a href="resolution_switching.html">Exercise 3</a>
+        <a href="image_alignment.html">Exercise 4</a>
+        <a href="Responsive_Images.html">Exercise 5</a>
+        <a href="image_gallery.html">Exercise 6</a>
+        <a href="figure_picture.html">Exercise 7 i 8</a>
+        <a href="palmeras.html">Palmeras</a>
+        <a href="final.html" class="active">Final</a>
+      </nav>
+    </header>
+    <!-- Contenido -->
+    <!-- Palm Tree image without defined size -->
+    <div>
+      <img src="./img/palmerasfinal.svg" width="100px" height="100px" alt="" />
+    </div>
+    <img src="palm_tree_without_size.png" alt="Palm Tree" />
+
+    <!-- Palm Tree image with size defined as 150x150px -->
+    <img
+      src="palm_tree_with_size.png"
+      alt="Palm Tree"
+      width="150"
+      height="150"
+    />
+
+    <!-- First Logo embedded using SVG element -->
+    <svg width="200" height="200">
+      <image href="./img/logofinal.svg" width="100%" height="100%" />
+    </svg>
+
+    <!-- Second Logo embedded using SVG element with size defined as 150x150px -->
+    <svg width="150" height="150">
+      <image href="./img/palmerasfinal.svg" width="100%" height="100%" />
+    </svg>
+    <!-- Fin del Contenido -->
+    <footer>
+      <a href="https://www.facebook.com/yourfacebook" target="_blank"
+        >Facebook</a
+      >
+      <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+      <a href="https://www.instagram.com/yourinstagram" target="_blank"
+        >Instagram</a
+      >
+    </footer>
+  </body>
 </html>
